@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\god\\IBX office stuff\\Projects\\designated-sites\\care-directory-starter\\server\\HealthcareDirectory.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F896B7B8-BC2A-9F1A-63EA-556D46A97B20}|HealthcareDirectory.Api.csproj|c:\\god\\ibx office stuff\\projects\\designated-sites\\care-directory-starter\\server\\healthcaredirectory.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F896B7B8-BC2A-9F1A-63EA-556D46A97B20}|HealthcareDirectory.Api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F896B7B8-BC2A-9F1A-63EA-556D46A97B20}|HealthcareDirectory.Api.csproj|c:\\god\\ibx office stuff\\projects\\designated-sites\\care-directory-starter\\server\\healthcaredirectory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F896B7B8-BC2A-9F1A-63EA-556D46A97B20}|HealthcareDirectory.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\god\\IBX office stuff\\Projects\\designated-sites\\care-directory-starter\\server\\HealthcareDirectory.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\god\\IBX office stuff\\Projects\\designated-sites\\care-directory-starter\\server\\HealthcareDirectory.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-23T11:02:27.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\god\\IBX office stuff\\Projects\\designated-sites\\care-directory-starter\\server\\HealthcareDirectory.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\god\\IBX office stuff\\Projects\\designated-sites\\care-directory-starter\\server\\HealthcareDirectory.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T11:01:58.763Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
