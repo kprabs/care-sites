@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HealthcareDirectory.Api.Endpoints.LabEndpoints\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapLabEndpoints\u003Eb__0",
+    "RelativePath": "api/labs/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HealthcareDirectory.Api.Endpoints.PhysicalTherapyEndpoints\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapPhysicalTherapyEndpoints\u003Eb__0",
+    "RelativePath": "api/pt/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HealthcareDirectory.Api.Endpoints.RadiologyEndpoints\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapRadiologyEndpoints\u003Eb__0",
+    "RelativePath": "api/radiology/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
