@@ -1,0 +1,57 @@
+// after: switchMap(() => this.store.selectOnce<PrimaryCareVm | null>(PrimaryCareState.pcpVm)),
+map((vm: any) => vm?.data ?? vm ?? null),
+
+// ⬇️ replace BOTH maps with this ONE map:
+map((pcpRaw: any) => {
+  // handle any of these shapes:
+  //  A) { provider: [...] }
+  //  B) { provider: { ... } }
+  //  C) { providerId: ..., providerName: ..., address... } (single object)
+  //  D) { data: { provider: ... } } already normalized above
+
+  const providerBlock = pcpRaw?.provider ?? pcpRaw; // if no .provider, treat the whole object as the provider
+  const providers = Array.isArray(providerBlock)
+    ? providerBlock
+    : providerBlock
+      ? [providerBlock]
+      : [];
+
+  this.pcpInform = providers;
+  this.displayPcp = providers.length > 0;
+
+  // pass both raw and providers to the next step
+  return { pcpRaw, providers };
+}),
+
+
+switchMap(({ pcpRaw, providers }: { pcpRaw: any; providers: any[] }) => {
+  // Prefer the providerId we just normalized
+  const providerId =
+    providers?.[0]?.providerId ??
+    pcpRaw?.providerId ??             // fallback in case raw object had it
+    pcpRaw?.pcpId ??                  // another possible name
+    null;
+
+  if (!providerId) {
+    return of({ facilities: [], error: null });
+  }
+
+  const dsPayload: PrimarycareProviderRequest = {
+    ...this.payload,
+    providerIdForCapitationSites: providerId
+  };
+
+  this.isServiceError = false;
+
+  return this.primaryCareService.getDesignatedSites(dsPayload).pipe(
+    map(ds => ({
+      facilities: ds?.data?.facilities ?? ds?.facilities ?? [],
+      error: null
+    })),
+    catchError(() => of({ facilities: [], error: 'Failed to load designated sites' }))
+  );
+})
+.subscribe(({ facilities, error }) => {
+  this.facilities = facilities;
+  this.isServiceError = !!error;
+});
